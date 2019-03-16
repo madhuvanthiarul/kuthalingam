@@ -1,0 +1,150 @@
+<html>
+	<head>
+	<title>form</title>
+	<style>
+	body
+	{
+		background:url(bac.jpg);
+		background-size:cover;
+		overflow-y:hidden;
+	}
+	  h1{
+		text-align:center;
+		color:#000080;
+		font-size:40px;
+		}
+		h3
+		{
+		text-align:center;
+		font-size:22px;
+		color:#ffa109;
+		font-family:comic sans ms;
+		}
+		#main
+		{
+		margin-left:380px;
+	
+		}
+		td{
+		font-size:22px;
+		color:#000080;
+		font-family:franklin gothic medium;
+		}
+		#main input[type="text"],
+		#main input[type="number"],
+		#main input[type="date"]
+		{
+			width:90%;
+			padding:5px;
+		}
+		#main input[type="text"]:focus,
+        #main input[type="number"]:focus,
+        #main input[type="radio"]:focus,
+		#main input[type="date"]:focus
+		{
+			border:2px solid #ff69b4;
+			padding:6px;
+		}
+		#main input[type="submit"]
+		{
+			border:none;
+			border-radius:10px;
+			background:#ff00ff;
+			height:35px;
+			width:70px;
+			margin-left:230px;
+			font-size:17px;
+			color:#fff;
+		}
+		#main input[type="submit"]:hover
+		{
+			cursor:pointer;
+			background:blue;
+			color:#000;
+		}
+		a
+		{	
+			margin-left:220px;
+			margin-right:260px;
+			font-size:26px;
+			font-family:gabrilo;
+			color:green;
+			font-weight:bold;
+			font-style:italic;
+			text-decoration:none
+		}
+	</style>
+	</head>
+	<body>
+	<h1>NELLAI EXPRESS</H1>
+	<h3>Tirunelveli to ChennaiEgmore</h3>
+	<div id="main">
+	<form>
+		<table cellspacing="8">
+		<tr>
+		<td>Name</td>
+		<td><input type="text" name="name"></td>
+		</tr>
+		<tr>
+		<td>Age	</td>
+		<td><input type="number" name="num"></td>
+		</tr>
+		<tr>
+	<td>
+	Gender</td>
+	<td><input type="radio" name="Gender" value="male"/>male
+	<input type="radio" name="Gender" value="female"/>female</td>
+	</tr><br><br>
+	<tr>
+	<td>From</td>
+	<td><select style="width:90%;padding:5px">
+	<option>select</option>
+	<option value="kanyakumari">kanyakumari
+	<option value="Tirunelveli">Tirunelveli
+	<option value="madurai">Madurai
+	<option value="Trichy">Trichy
+	<option value="Villupuram">Villupuram
+	</select></td>
+	</tr>
+	<tr>
+	<td>To</td>
+	<td><select style="width:90%;padding:5px">
+	<option>select</option>
+	<option value="Egmore">Egmore
+	<option value="Thamparam">thamparam
+	<option value="madurai">Madurai
+	<option value="villupuram">villupuram
+	<option value="vandallur">vandallur
+	</select></td>
+	</tr>
+	<tr>
+	<td>Berth</td>
+	<td><input type="radio" name="berth" value="upper">Upperberth
+	<input type="radio" name="berth" value="midle">Middleberth
+	<input type="radio" name="berth" value="lower">Lowerberth</td>
+	</tr>
+	<tr>
+	<td>
+	Date of journay
+	</td>
+	<td>
+	<input type="date" name="date">
+	</td>
+	</tr>
+	<tr>
+	<td>No.of.Passenger</td>
+	<td><input type="number" name="num1"></td>
+	</tr>
+	<tr>
+	<td>
+	PhoneNumber</td>
+	<td>
+	<input type="text" name="phone"></td>
+	</tr>
+	</table>
+	<input type="submit" value="submit">
+	</form>
+	</div>
+	<a href="ticket.html">Click here to Go Back</a><a href=" ">Continue</a>
+	</body>
+</html>

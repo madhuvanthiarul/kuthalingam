@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Registration</title>
+<link href="style1.css" rel="stylesheet" type="text/css">
+<script>
+function valid()
+{
+	var u=document.f1.user.value;
+	var p=document.f1.pass;
+	if(validation(p,6,10))
+	{
+		if(letter(u)==1)
+			return true;
+		else
+			return false;
+	}
+	else
+	{
+		return false;
+	}
+	
+	
+}
+function validation(uu,m,n)
+{
+	var pword=uu.value.length;
+	if(pword>=n||pword<m||pword=="")
+	{
+		alert("Password should not be Empty and Length should be between 6 to 10");
+		f1.pass.focus();
+		return false;
+	}
+	
+	else
+	{
+	return true;
+	}
+	
+}
+function letter(u)
+{
+	var word=/^[a-zA-Z]+$/;
+	if(u=="")
+	{
+	alert("Username is empty");
+	f1.user.focus();
+	return 0;
+	}
+	if(u.match(word))
+	{
+	return 1;
+	}
+	else
+	{
+	alert("Username must have alphabet letters only");
+	f1.user.focus();
+	return 0;
+	}
+}
+function checkpass()
+{
+var pp=f1.pass.value;
+var cc=f1.pass1.value;
+if(pp!=cc)
+{
+	alert("mismatch passwords");
+	f1.pass1.focus();
+	return false;
+}
+else
+{
+return true;
+}
+}
+function phone()
+{
+var mm=prompt("Enter a phone number");
+f1.num.value=mm;
+f1.sub.focus();
+if(mm.length==0)
+{
+alert("Error!!Phone number should not be empty");
+f1.num.focus();
+}
+else if((mm.length<10)||(mm.length>10))
+{
+	alert("Phone number must contain 10 digits!!");
+	f1.num.focus();
+}
+else
+{
+return true;
+}
+}
+</script>
+</head>
+<body  onload="document.f1.user.focus();">
+	<div class="title"><h1 style="color:#faa500">Sign up</h1></div>
+	<div class="container">
+		<div class="left"></div>
+		<div class="right">
+		<div class="formbox">
+		<form  name="f1" action="train.html" onsubmit="return valid();">
+		<p>UserName</P>
+		<input type="text" name="user" placeholder="Username">
+		<p>Password</p>
+		<input type="password" name="pass" placeholder="password">
+		<p>Confirm Password</p>
+		<input type="password" name="pass1" placeholder="confirm password">
+		<p>Email Address</p>
+		<input type="email" placeholder="Email" required>
+		<p>Number</p>
+		<input type="text" placeholder="Phone Number" name="num" onfocus="phone()">
+		
+		<input type="submit" name="sub" value="Done" onclick="return checkpass();">
+		</form>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

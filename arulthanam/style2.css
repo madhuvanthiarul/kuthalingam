@@ -1,0 +1,33 @@
+body
+{
+	margin:0;
+	padding:0;
+	background:url(pho14.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.middle{
+	position:absolute;
+	top:15%;
+	display:flex;
+	padding-left:790px;
+}
+.text
+{
+color:#fff4b5;
+font-size:40px;
+font-weight:bold;
+font-family:serif;
+cursor:pointer;
+}
+.hidden{
+	max-width:0;
+	opacity:0;
+	transition:0.5s ease in;
+}
+.text:hover .hidden
+{
+	opacity:1a;
+	max-width:2em;
+}
+	

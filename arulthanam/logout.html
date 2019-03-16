@@ -1,0 +1,31 @@
+<html>
+<head>
+<link href="sty6.css" rel="stylesheet">
+</head>
+<script>
+function valid()
+{
+var cc=confirm("Are you sure do you want to logout?");
+if(cc)
+{
+	alert("successfully logout!!!");
+	return true;
+}
+else
+return false;
+}
+</script>
+<body>
+<div class="container">
+	<div class="inside"></div>
+	<h2>
+	If you are logout your account,it will be deleted permanently, you are not able to use this.
+	<form name="f1" action="fresh.html">
+	<input type="submit" value="logout" name="log" onclick="return valid();"><a href="layout.html"><input type="button" value="back" name="log"></a>
+	
+	</form>
+	</h2>
+	
+</div>
+</body>
+</html>

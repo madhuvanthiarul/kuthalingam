@@ -1,0 +1,282 @@
+.box
+{
+position:relative;
+height:464px;
+width:700px;
+background:#000080;
+margin-left:350px;
+overflow:hidden;
+}
+.box .image
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	display:flex;
+}
+.box .image i
+{
+	width:25%;
+	height:100%;
+	background:url(18.jpg);
+	transition:0.5s;
+}
+.box:hover .image i
+{
+	transform:translateY(-100%);
+}
+.box .image i:nth-child(1)
+{
+	background-position:0;
+	transition-delay:0s;
+}
+.box .image i:nth-child(2)
+{
+	background-position:17%;
+	transition-delay:0.1s;
+}
+.box .image i:nth-child(3)
+{
+	background-position:34%;
+	transition-delay:0.2s;
+}
+.box .image i:nth-child(4)
+{
+	background-position:51%;
+	transition-delay:0.3s;
+}
+.box .content
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:20px 20px;
+	box-sizing:border-box;
+	text-align:center;
+	transition:0.5s;
+	transform:translateY(100%);
+}
+.box:hover .content
+{
+	transition-delay:0.5s;
+	transform:translateY(0);
+}
+.box .content h1
+{
+	color:#fff;
+	font-family:gabrilo;
+	font-size:25px;
+	text-transform:uppercase;
+}
+.box .content p
+{
+	color:#fff;
+	font-family:gabrilo;
+	font-size:17px;
+	
+}
+.check
+{
+		position:relative;
+		width:700;
+		height:416;
+		background:#000080;
+		margin-left:350px;
+		overflow:hidden;
+}
+.check .pic
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	display:flex;
+} 
+.check .pic span
+{
+	width:35%;
+	height:100%;
+	background:url(pho1.jpg);
+	transition:0.5s;
+}
+.check:hover .pic span
+{
+	transform:translateY(-100%);
+}
+.check .pic span:nth-child(1)
+{
+	background-position:0;
+	transition-delay:0s;
+}
+.check .pic span:nth-child(2)
+{
+	background-position:33%;
+	transition-delay:0.1s;
+}
+.check .pic span:nth-child(3)
+{
+	background-position:66%;
+	transition-delay:0.2s;
+}
+.check .pic span:nth-child(4)
+{
+	background-position:99%;
+	transition-delay:0.3s;
+}	
+.check .con
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:20px 20px;
+	box-sizing:border-box;
+	text-align:center;
+	transition:0.5s;
+	transform:translateY(100%);
+}
+.check:hover .con
+{
+	transition-delay:0.5s;
+	transform:translateY(0);
+}
+.check .con h3
+{
+	color:#fff;
+	font-family:gabrilo;
+	font-size:25px;
+	text-transform:uppercase;
+}
+.check .con p
+{
+	color:#fff;
+	font-family:gabrilo;
+	font-size:17px;
+	
+}
+.check1
+{
+		position:relative;
+		width:700;
+		height:437;
+		background:#000080;
+		margin-left:350px;
+		overflow:hidden;
+}
+.check1 .pic1
+{
+	position:relative;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	display:flex;
+} 
+.check1 .pic1 span
+{
+	width:35%;
+	height:100%;
+	background:url(pho18.jpg);
+	transition:0.5s;
+}
+.check1:hover .pic1 span
+{
+	transform:translateY(-100%);
+}
+.check1 .pic1 span:nth-child(1)
+{
+	background-position:0;
+	transition-delay:0s;
+}
+.check1 .pic1 span:nth-child(2)
+{
+	background-position:33%;
+	transition-delay:0.1s;
+}
+.check1 .pic1 span:nth-child(3)
+{
+	background-position:66%;
+	transition-delay:0.2s;
+}
+.check1 .pic1 span:nth-child(4)
+{
+	background-position:99%;
+	transition-delay:0.3s;
+}	
+.check1 .con1
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:20px 20px;
+	box-sizing:border-box;
+	text-align:center;
+	transition:0.5s;
+	transform:translateY(100%);
+}
+.check1:hover .con1
+{
+	transition-delay:0.5s;
+	transform:translateY(0);
+}
+.check1 .con1 h4
+{
+	color:#fff;
+	font-family:gabrilo;
+	font-size:25px;
+	text-transform:uppercase;
+}
+.check1 .con1 p
+{
+	color:#fff;
+	font-family:gabrilo;
+	font-size:17px;
+	
+}
+ input[type="button"]
+{
+	border:none;
+	border-radius:10px;
+	background:#dc143c;
+	outline:none;
+	height:35px;
+	font-size:17px;
+	color:#fff;
+}
+input[type="button"]:hover
+{
+	cursor:pointer;
+	background:#ffd700;
+	color:#000;
+}
+#foot
+{
+	height:5%;
+	width:100%;
+	background-color:#f54967;
+	margin-top:70px;
+}	
+b
+{
+	text-decoration:none;
+	padding-left:420px;
+	line-height:28px;
+	font-size:18px;
+}
